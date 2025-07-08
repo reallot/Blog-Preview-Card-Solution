@@ -1,0 +1,155 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: 'Figtree';
+        /*a name to be used later*/
+        src: local("Figtree-VariableFont_wght"), url("./assets/fonts/Figtree-VariableFont_wght.ttf");
+        /*URL to font*/
+    }
+
+    body {
+        background-color: hsl(47, 88%, 63%);
+        display: flex;
+        /* Use flexbox for centering */
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+        min-height: 100vh;
+        /* Make sure body takes full viewport height */
+        flex-direction: column;
+        /* Stack items vertically */
+        font-family: Figtree;
+        font-size: 16px;
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+
+    .colorWhite {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        position: relative;
+        width: 25rem;
+        height: 36rem;
+        border: 1px solid black;
+        margin-top: 100px;
+        border-radius: 25px;
+        background-color: white;
+        box-shadow: 10px 10px;
+        padding: 0.5rem;
+
+    }
+
+    .insideImg {
+        width: 336px;
+        height: 201px;
+        margin-top: 50px;
+        border: 0px;
+        margin-top: 1.5rem;
+        border-radius: 15px;
+        background-color: white;
+
+    }
+
+    .learning {
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+
+    .learning h5 {
+
+        width: 5rem;
+        height: 2rem;
+        border-radius: 5px;
+        background-color: hsl(47, 88%, 63%);
+        text-align: center;
+        padding-top: 6px;
+        font-weight: 800;
+
+    }
+
+    .texts {
+        font-weight: lighter;
+        font-weight: 500;
+        padding-left: 20px;
+        margin-top: 15px;
+    }
+
+    .texts h1 {
+        font-size: 30px;
+        margin-top: 20px;
+        color: hsl(0, 0%, 7%)
+    }
+
+    .texts h1+p {
+        margin-top: 20px;
+        font-weight: 500;
+        color: hsl(0, 0%, 42%);
+    }
+
+    .pp {
+        display: flex;
+    }
+
+    .pp img {
+        margin-top: 45px;
+        margin-left: 20px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .pp h3 {
+        margin-left: 15px;
+        margin-top: 55px;
+        color: hsl(0, 0%, 7%);
+    }
+
+
+    /* Card title styling */
+    .texts h1 {
+        font-size: 1.5rem;
+        /* For example, 24px */
+        color: hsl(0, 0%, 7%);
+        /* Gray 950 */
+        font-weight: 800;
+        /* Bold weight */
+        cursor: pointer;
+        /* Indicates it's clickable */
+        transition: color 0.3s ease;
+        /* Smooth transition for hover effect */
+    }
+
+    /* Hover effect for the H1 */
+    .texts h1:hover {
+        color: hsl(47, 88%, 63%);
+        /* Yellow color on hover */
+    }
+
+    /* Or, if you want the anchor tag to be the interactive element */
+    .texts a {
+        text-decoration: none;
+        /* Remove default underline from anchor */
+        color: inherit;
+        /* Inherit color from h1 */
+    }
+
+    .texts a:hover h1 {
+        color: hsl(47, 88%, 63%);
+        /* Yellow color on hover */
+    }
